@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Replacement Algorithm</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-grid.min.css">
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div>
+            <h1>Page Replacement Algorithm</h1>
+        </div>
+        <div>
+            <select id="algorithm" class="p-2 mb-1">
+                <option value="">None</option>
+                <option value="fifo">FIFO</option>
+            </select>
+        </div><br>
+       <form action="" class="form">
+        <input type="number" min="3" placeholder="Frame Size" id="frame" class="p-2 mb-1" required>
+        <input type="text" placeholder="Enter Elements" id="arr" class="p-2 mb-1" required><br><br>
+
+        <input type="submit" value="Submit" id="btn" class="btn btn-dark p-2" >
+        <input type="reset" value="Reset" id="btn" class="btn btn-dark p-2" onclick="resetWin()">
+        
+       </form>
+       <br>
+       <br>
+       <h2>Hit & Miss During Algorithm Processing</h2>
+       <table id="grid" width="50%" border="1" cellpadding="20" cellspacing="7pxpx">
+
+       </table>
+       <h2 id="hits"></h2>
+       <h2 id="miss"></h2>
+       <h2 id="ratioh"></h2>
+       <h2 id="ratiom"></h2>
+
+    </div></center>
+    
+</body>
+<script src="index.js">
+</script>
+<script>
+    function resetWin() {
+        location.reload();
+    }
+</script>
+</html>

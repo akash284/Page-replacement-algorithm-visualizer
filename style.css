@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(3, 3, 31);
+    color: rgb(178, 241, 220);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#btn{
+    background-color: rgb(178, 241, 220);
+    color: rgb(3, 3, 31);
+    width: 175px;
+    border: 9px, solid rgb(3, 3, 31);
+    border-radius: 6px;
+}
+.p-2{
+    background-color: rgba(3, 3, 31, 0.856);
+    color: rgb(178, 241, 220);
+    border: 1px solid rgb(178, 241, 220);
+    border-radius: 6px;
+}
+::placeholder{
+    color: rgb(178, 241, 220);
+}
